@@ -64,7 +64,7 @@
                         </div>
                         <a
                             v-for="(option, index) in element.items"
-                            :key="groupindex + ':' + index"
+                            :key="option.key || groupindex + ':' + index"
                             class="dropdown-item"
                             role="button"
                             tabindex="0"
